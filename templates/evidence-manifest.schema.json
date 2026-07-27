@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/llm-evidence-manifest.schema.json",
+  "title": "LLM Evaluation Evidence Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sourceFingerprint",
+    "promptFingerprint",
+    "evaluatorFingerprint",
+    "modelIdentifier",
+    "providerClass",
+    "stage",
+    "inputDigest",
+    "responseDigest",
+    "fixtureVersion"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "sourceFingerprint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "promptFingerprint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evaluatorFingerprint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "modelIdentifier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "providerClass": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inputDigest": {
+      "type": "string",
+      "minLength": 1
+    },
+    "responseDigest": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fixtureVersion": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

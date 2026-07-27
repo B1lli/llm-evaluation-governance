@@ -1,0 +1,13 @@
+{
+  "name": "llm-evaluation-governance-skill",
+  "version": "0.1.0",
+  "description": "Govern regression, statistics, data isolation, prompt changes, and concurrency for multi-stage LLM evaluations.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
